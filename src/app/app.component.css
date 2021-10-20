@@ -1,3 +1,6 @@
+body{
+  scroll-behavior: smooth;
+}
 .spacer {
   flex: 1;
   position: relative;
@@ -56,17 +59,17 @@
   max-width: 960px;
   flex-direction: column;
   align-items: center;
+  ;
 }
 .example-card {
   width: 700px;
   height: 150px;
-  margin-left: 50%;
-  backface-visibility: hidden;
+  margin-left: 20%;
   box-shadow: none;
 }
 .example-card-p{
   font-size: 40px ;
-  width:800px ;
+  width:800px;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   position: relative;
@@ -76,7 +79,6 @@
 .card-login{
   width: 700px;
   height: 150px;
-  backface-visibility: hidden;
   box-shadow: none;
 }
 .card-login-b1{
@@ -84,7 +86,6 @@
   width:400px ;
   height:400px;
   margin: 10%;
-  text-align: left;
   font-family: "Open Sans", sans-serif;
   position: relative;
   line-height: 0.6;
@@ -96,7 +97,6 @@
   width:400px ;
   height:400px;
   margin: 1%;
-  text-align: left;
   font-family: "Open Sans", sans-serif;
   position: relative;
   line-height: 0.6;
