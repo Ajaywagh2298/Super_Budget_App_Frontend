@@ -83,12 +83,25 @@
   font-size: 40px ;
   width:400px ;
   height:400px;
-  margin: 30px;
+  margin: 10%;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   position: relative;
   line-height: 0.6;
   color: #738f93;
+  box-shadow: none;
+}
+.card-login-b2{
+  font-size: 40px ;
+  width:400px ;
+  height:400px;
+  margin: 1%;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  line-height: 0.6;
+  color: #738f93;
+  box-shadow: none;
 }
 .card-login-b1-title{
   font-size: 35px;
