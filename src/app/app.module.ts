@@ -13,6 +13,8 @@ import { SidenavCustomerComponent } from './sidenav-customer/sidenav-customer.co
 import { HomeCustomerComponent } from './home-customer/home-customer.component';
 import { DashboardCustomerComponent } from './dashboard-customer/dashboard-customer.component';
 import { AppRoutingModule } from './app-routing.module';
+import {RouterModule} from "@angular/router";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderCustomerComponent,
     SidenavCustomerComponent,
     HomeCustomerComponent,
-    DashboardCustomerComponent
+    DashboardCustomerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatCardModule,
     MatTableModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
