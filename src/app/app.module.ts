@@ -15,6 +15,8 @@ import { DashboardCustomerComponent } from './dashboard-customer/dashboard-custo
 import { AppRoutingModule } from './app-routing.module';
 import {RouterModule} from "@angular/router";
 import { HomeComponent } from './home/home.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { HomeComponent } from './home/home.component';
     MatTableModule,
     MatButtonModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
