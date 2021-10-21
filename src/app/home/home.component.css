@@ -1,0 +1,156 @@
+body{
+  scroll-behavior: smooth;
+}
+.spacer {
+  flex: 1;
+  position: relative;
+  margin-right: 30px;
+}
+.super{
+  font-size: 50px;
+  position: relative;
+  margin: 20px;
+  margin-left: 2px;
+  display: flex;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: bold;
+}
+.toolbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  background-color: #28B463;
+  color: white;
+  font-weight: 600;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 10px 7px -4px #ABB2B9;
+}
+
+.toolbar img {
+  margin: 0 20px;
+
+}
+.ilog{
+  margin: 10px;
+  font-size: 30px;
+  display: flex;
+}
+.log{
+  margin: 10px;
+  margin-left: 15px;
+  font-size: 70px;
+  display: flex;
+}
+.LoginBox1{
+  position: relative;
+}
+.content{
+  position: fixed;
+}
+
+.content {
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+;
+}
+.example-card {
+  width: 700px;
+  height: 150px;
+  margin-left: 20%;
+  box-shadow: none;
+}
+.example-card-p{
+  font-size: 40px ;
+  width:800px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  line-height: 0.6;
+  color: #738f93;
+}
+.card-login{
+  width: 700px;
+  height: 150px;
+  box-shadow: none;
+}
+.card-login-b1{
+  font-size: 40px ;
+  width:400px ;
+  height:400px;
+  margin: 10%;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  line-height: 0.6;
+  color: #738f93;
+  box-shadow: none;
+}
+.card-login-b2{
+  font-size: 40px ;
+  width:400px ;
+  height:400px;
+  margin: 1%;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  line-height: 0.6;
+  color: #738f93;
+  box-shadow: none;
+}
+.card-login-b1-title{
+  font-size: 35px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  padding: 20px;
+}
+.example-card-b1-p1{
+  font-size: 22px ;
+  width:350px ;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  display: flex;
+  line-height: 1.5;
+  color: #738f93;
+  padding: 20px;
+}
+.example-card-b1-a1{
+  background:#2ECC71;
+  width: 200px;
+  height: 60px;
+  color: aliceblue;
+  font-size: 25px;
+  visibility: visible;
+
+}
+.card-login-b2-title{
+  font-size: 35px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  padding: 20px;
+}
+.example-card-b2-p1{
+  font-size: 22px ;
+  width:350px ;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  display: flex;
+  line-height: 1.5;
+  color: #738f93;
+  padding: 20px;
+}
+.example-card-b2-a1{
+  background:#2ECC71;
+  width: 200px;
+  height: 60px;
+  color: aliceblue;
+  font-size: 25px;
+
+}
