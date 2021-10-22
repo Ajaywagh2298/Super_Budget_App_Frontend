@@ -17,6 +17,8 @@ import {RouterModule} from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
+import { CustomerHeaderComponent } from './home-header/customer-header.component';
+import { HomeHeaderComponent } from './home-header/home-header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import {MatIconModule} from "@angular/material/icon";
     SidenavCustomerComponent,
     HomeCustomerComponent,
     DashboardCustomerComponent,
-    HomeComponent
+    HomeComponent,
+    CustomerHeaderComponent,
+    HomeHeaderComponent
   ],
   imports: [
     BrowserModule,
