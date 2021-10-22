@@ -17,8 +17,9 @@ import {RouterModule} from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
-import { CustomerHeaderComponent } from './home-header/customer-header.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
+import { HomeLoginViewComponent } from './home-login-view/home-login-view.component';
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -30,8 +31,8 @@ import { HomeHeaderComponent } from './home-header/home-header.component';
     HomeCustomerComponent,
     DashboardCustomerComponent,
     HomeComponent,
-    CustomerHeaderComponent,
-    HomeHeaderComponent
+    HomeHeaderComponent,
+    HomeLoginViewComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,8 @@ import { HomeHeaderComponent } from './home-header/home-header.component';
     AppRoutingModule,
     RouterModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

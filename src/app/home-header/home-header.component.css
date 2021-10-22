@@ -1,0 +1,22 @@
+body{
+  -webkit-user-select: none
+}
+
+.head-box{
+  background: #1ABC9C;
+  height: 100px;
+  text-align-all: justify;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.head-title{
+  font-size:  40px;
+  color: aliceblue;
+}
+.head-login-super{
+  color: white;
+  font-size: 25px;
+  background: #1ABC9C;
+  widht:150px;
+}

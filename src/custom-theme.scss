@@ -32,4 +32,4 @@ $Frontend-theme: mat.define-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($Frontend-theme);
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@800&display=swap');
