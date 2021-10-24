@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
 import {CustomerLoginComponent} from "../customer-login/customer-login.component";
+import {HomeLrDividerComponent} from "../home-lr-divider/home-lr-divider.component";
 
 @Component({
   selector: 'app-home-login-view',
@@ -9,9 +10,12 @@ import {CustomerLoginComponent} from "../customer-login/customer-login.component
 })
 export class HomeLoginViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogRef : MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  openDialog() {
+   this.dialogRef.open(HomeLrDividerComponent)
+  }
 }

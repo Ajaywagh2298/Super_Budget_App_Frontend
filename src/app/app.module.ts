@@ -23,6 +23,10 @@ import {MatDividerModule} from "@angular/material/divider";
 import { HomeAboutComponent } from './home-about/home-about.component';
 import { HomeAimComponent } from './home-aim/home-aim.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
+import {MatDialog, MatDialogModule} from "@angular/material/dialog";
+import { HomeLrDividerComponent } from './home-lr-divider/home-lr-divider.component';
+import {MatTabsModule} from "@angular/material/tabs";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -38,7 +42,8 @@ import { HomeFooterComponent } from './home-footer/home-footer.component';
     HomeLoginViewComponent,
     HomeAboutComponent,
     HomeAimComponent,
-    HomeFooterComponent
+    HomeFooterComponent,
+    HomeLrDividerComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,10 @@ import { HomeFooterComponent } from './home-footer/home-footer.component';
     RouterModule,
     MatToolbarModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule,
+    MatTabsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
