@@ -22,6 +22,7 @@ import { HomeLoginViewComponent } from './home-login-view/home-login-view.compon
 import {MatDividerModule} from "@angular/material/divider";
 import { HomeAboutComponent } from './home-about/home-about.component';
 import { HomeAimComponent } from './home-aim/home-aim.component';
+import { HomeFooterComponent } from './home-footer/home-footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { HomeAimComponent } from './home-aim/home-aim.component';
     HomeHeaderComponent,
     HomeLoginViewComponent,
     HomeAboutComponent,
-    HomeAimComponent
+    HomeAimComponent,
+    HomeFooterComponent
   ],
   imports: [
     BrowserModule,

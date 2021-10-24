@@ -32,7 +32,7 @@
   padding: 9%;
   padding-top: 3%;
   text-align-all: justify;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Lucida Handwriting", "Brush Script MT", cursive;
   line-height: 1.6;
   padding-bottom: 7%;
@@ -66,7 +66,7 @@
  .mat-head {
     font-size: 16px;
    font-family: sans-serif;
-   text-align: center;
+   padding-left: 0px;
   }
   .login-box{
     position: relative;
@@ -74,7 +74,7 @@
     padding: 2%;
     text-align-all: justify;
     font-size-adjust: inherit;
-    font-size: 12px;
+    font-size: 10px;
     font-family: "Lucida Handwriting", "Brush Script MT", cursive;
     display: flow;
   }

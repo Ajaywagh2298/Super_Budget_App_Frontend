@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
+import {CustomerLoginComponent} from "../customer-login/customer-login.component";
 
 @Component({
   selector: 'app-home-login-view',
