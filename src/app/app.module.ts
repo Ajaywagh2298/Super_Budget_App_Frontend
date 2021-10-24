@@ -20,6 +20,8 @@ import {MatIconModule} from "@angular/material/icon";
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeLoginViewComponent } from './home-login-view/home-login-view.component';
 import {MatDividerModule} from "@angular/material/divider";
+import { HomeAboutComponent } from './home-about/home-about.component';
+import { HomeAimComponent } from './home-aim/home-aim.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {MatDividerModule} from "@angular/material/divider";
     DashboardCustomerComponent,
     HomeComponent,
     HomeHeaderComponent,
-    HomeLoginViewComponent
+    HomeLoginViewComponent,
+    HomeAboutComponent,
+    HomeAimComponent
   ],
   imports: [
     BrowserModule,
