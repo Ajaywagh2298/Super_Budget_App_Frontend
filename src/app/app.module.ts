@@ -9,10 +9,10 @@ import {MatTableModule} from "@angular/material/table";
 import {MatButtonModule} from "@angular/material/button";
 import {CustomerComponent} from './customer/customer.component';
 import {CustomerLoginComponent} from './customer-login/customer-login.component';
-import {HeaderCustomerComponent} from './header-customer/header-customer.component';
-import {SidenavCustomerComponent} from './sidenav-customer/sidenav-customer.component';
+import {HeaderCustomerComponent} from './customer-header/header-customer.component';
+import {SidenavCustomerComponent} from './customer-sidenav/sidenav-customer.component';
 import {HomeCustomerComponent} from './home-customer/home-customer.component';
-import {DashboardCustomerComponent} from './dashboard-customer/dashboard-customer.component';
+import {DashboardCustomerComponent} from './customer-dashboard/dashboard-customer.component';
 import {AppRoutingModule} from './app-routing.module';
 import {RouterModule} from "@angular/router";
 import {HomeComponent} from './home/home.component';
@@ -30,6 +30,7 @@ import {MatTabsModule} from "@angular/material/tabs";
 import {FormsModule} from "@angular/forms";
 import {CustomerRegistrationComponent} from './customer-registration/customer-registration.component';
 import {HttpClientModule} from "@angular/common/http";
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -49,22 +50,23 @@ import {HttpClientModule} from "@angular/common/http";
     HomeLrDividerComponent,
     CustomerRegistrationComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatTableModule,
-    MatButtonModule,
-    AppRoutingModule,
-    RouterModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatDividerModule,
-    MatDialogModule,
-    MatTabsModule,
-    FormsModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        MatTableModule,
+        MatButtonModule,
+        AppRoutingModule,
+        RouterModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatDividerModule,
+        MatDialogModule,
+        MatTabsModule,
+        FormsModule,
+        HttpClientModule,
+        MatListModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
