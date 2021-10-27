@@ -1,0 +1,37 @@
+.body{
+
+}
+.page-footer {
+  background: #17A589;
+  color: white;
+}
+
+.text-uppercase {
+  font-size: 30px;
+}
+
+.footer-copyright {
+  background: #148F77;
+}
+
+.foot-icon {
+  margin-top: 10%;
+  font-size: 50px;
+}
+
+.icon-l {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  .foot-icon {
+    margin-top: 5%;
+    font-size: 30px;
+  }
+
+  .icon-l {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
