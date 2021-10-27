@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { HomeLoginViewComponent } from './home-login-view.component';
+import {HomeLoginViewComponent} from './home-login-view.component';
 
 describe('HomeLoginViewComponent', () => {
   let component: HomeLoginViewComponent;
@@ -8,9 +8,9 @@ describe('HomeLoginViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeLoginViewComponent ]
+      declarations: [HomeLoginViewComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

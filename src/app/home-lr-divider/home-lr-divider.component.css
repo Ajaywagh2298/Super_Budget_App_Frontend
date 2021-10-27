@@ -1,18 +1,22 @@
 .example-large-box {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   padding-top: 2%;
 }
-.main-ta-box{
+
+.main-ta-box {
 
 }
-.til{
+
+.til {
   color: #239B56;
 }
-.ta-box{
+
+.ta-box {
   color: #2E86C1;
   border-radius: 50%;
 }
+
 @media screen and (max-width: 600px) {
   .example-large-box {
     height: 100%;

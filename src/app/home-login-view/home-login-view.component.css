@@ -1,4 +1,4 @@
-.box-main-container{
+.box-main-container {
   padding: 2%;
   margin: 5%;
   position: relative;
@@ -6,28 +6,32 @@
   display: -webkit-flex;
 
 }
-.box-sub-container{
-  display : flex;
-  flex-direction : row;
+
+.box-sub-container {
+  display: flex;
+  flex-direction: row;
   display: -webkit-box;
   display: -webkit-flex;
   position: relative;
 }
-.box-sub-box1{
+
+.box-sub-box1 {
   margin: 2%;
-  width:50%;
+  width: 50%;
   position: relative;
   box-shadow: none;
 }
-.box-sub-box2{
-  display : flex;
+
+.box-sub-box2 {
+  display: flex;
   margin: auto;
-  width:50%;
+  width: 50%;
   position: relative;
   box-shadow: none;
 }
-.login-box{
- position: relative;
+
+.login-box {
+  position: relative;
   margin: auto;
   padding: 9%;
   padding-top: 3%;
@@ -37,7 +41,8 @@
   line-height: 1.6;
   padding-bottom: 7%;
 }
-.mat-head{
+
+.mat-head {
   width: 100%;
   position: relative;
   margin: auto;
@@ -48,7 +53,7 @@
   font-weight: bold;
 }
 
-.mat-head-button{
+.mat-head-button {
   width: 40%;
   position: relative;
   margin: auto;
@@ -59,16 +64,19 @@
   color: aliceblue;
   background: #1ABC9C;
 }
-.login-button{
+
+.login-button {
   padding-left: 10%;
 }
+
 @media screen and (max-width: 600px) {
- .mat-head {
+  .mat-head {
     font-size: 16px;
-   font-family: sans-serif;
-   padding-left: 0px;
+    font-family: sans-serif;
+    padding-left: 0px;
   }
-  .login-box{
+
+  .login-box {
     position: relative;
     margin: auto;
     padding: 2%;
@@ -78,7 +86,8 @@
     font-family: "Lucida Handwriting", "Brush Script MT", cursive;
     display: flow;
   }
-  .mat-head-button{
+
+  .mat-head-button {
     width: 50%;
     position: relative;
     margin: auto;

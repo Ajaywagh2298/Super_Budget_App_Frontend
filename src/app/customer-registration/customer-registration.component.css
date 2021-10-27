@@ -73,6 +73,23 @@ h2 {
   border-radius: 0 0 10px 10px;
 }
 
+.fa-google {
+  color: #E74C3C;
+}
+
+.fa-facebook-f {
+  color: #2E86C1;
+}
+
+.fa-instagram {
+
+}
+
+.foot-reg {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
 
 /* TABS */
 

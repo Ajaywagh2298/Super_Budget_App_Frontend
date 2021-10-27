@@ -1,13 +1,15 @@
-.header-about{
+.header-about {
   font-size: 60px;
   font-family: Arial;
-  color:#34495E ;
+  color: #34495E;
   padding-top: 2%;
   padding-bottom: 2%;
 }
-body{
+
+body {
   box-shadow: none;
 }
+
 @keyframes letters {
   from {
     left: 0;
@@ -16,6 +18,7 @@ body{
     left: 50ch;
   }
 }
+
 @keyframes lines {
   from {
     top: 0;
@@ -24,11 +27,13 @@ body{
     top: 100%;
   }
 }
+
 @keyframes cursor-type {
   50% {
     border-color: #000;
   }
 }
+
 @keyframes cursor-wait {
   0% {
     box-shadow: inset 2px 0 0 0 rgba(0, 0, 0, 0);
@@ -40,20 +45,22 @@ body{
     box-shadow: inset 2px 0 0 0 black;
   }
 }
-.typewriter{
+
+.typewriter {
   text-align-all: justify;
   padding-left: 10%;
   padding-right: 10%;
   margin-left: 1%;
 }
+
 .type {
   position: relative;
   font-family: Consolas;
   width: 100%;
-  line-height: 2.5;
+  line-height: 1;
   word-break: break-all;
   overflow: hidden;
-  font-size: 30px;
+  font-size: 20px;
   color: #239B56;
 }
 
@@ -68,6 +75,7 @@ body{
     width: 100%;
     background-color: #fff;
   }
+
   .type:before {
     border-left: 1px solid transparent;
     top: 100%;
@@ -75,6 +83,7 @@ body{
     animation-name: letters, lines, cursor-type, cursor-wait;
     animation-fill-mode: both, both, both, backwards;
   }
+
   .type:after {
     content: '';
     height: 100%;
@@ -90,6 +99,7 @@ body{
   animation-iteration-count: 4, 1, 181, 2;
   animation-delay: 4.2s, 4.2s, 4.2s, 2.6s;
 }
+
 .type + .type:after {
   animation: lines 5.7142857143s steps(4, end) 1;
   animation-fill-mode: both;
@@ -102,17 +112,20 @@ body{
   animation-iteration-count: 3, 1, 120, 2;
   animation-delay: 10.9714285714s, 10.9714285714s, 10.9714285714s, 9.3714285714s;
 }
+
 .type + .type + .type:after {
   animation: lines 4.2857142857s steps(3, end) 1;
   animation-fill-mode: both;
   animation-delay: 10.9714285714s;
 }
+
 .type + .type + .type + .type:before {
   animation-duration: 1.4285714286s, 7.1428571429s, 0.0285714286s, 0.8s;
   animation-timing-function: steps(50, end), steps(5, end), step-end, ease-out;
   animation-iteration-count: 5, 1, 215, 2;
   animation-delay: 16s, 16s, 16s, 14.4s;
 }
+
 @media screen and (max-width: 600px) {
   .type {
     position: relative;
@@ -124,10 +137,11 @@ body{
     font-size: 18px;
     color: #239B56;
   }
-  .header-about{
+
+  .header-about {
     font-size: 30px;
-    font-family:Arial;
-    color:#34495E;
+    font-family: Arial;
+    color: #34495E;
     padding-top: 2%;
     padding-bottom: 2%;
   }

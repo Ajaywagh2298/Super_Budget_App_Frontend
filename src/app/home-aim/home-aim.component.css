@@ -1,29 +1,34 @@
-.header-about{
+.header-about {
   font-size: 60px;
   font-family: Arial;
-  color:#34495E ;
+  color: #34495E;
   padding-top: 2%;
   padding-bottom: 2%;
 }
-.box-aim{
+
+.box-aim {
   font-size: 20px;
   line-height: 2;
   font-family: sans-serif;
-  color: #5D6D7E ;
+  color: #5D6D7E;
 }
-.container-login{
+
+.container-login {
   margin: 5%;
 }
-.mat-card-image{
+
+.mat-card-image {
   height: 150px;
   width: 150px;
   margin-bottom: 0;
 }
-.t{
+
+.t {
   font-size: 26px;
   margin-top: 0;
   color: #1ABC9C;
 }
+
 @media screen and (max-width: 600px) {
   .type {
     position: relative;
@@ -35,27 +40,31 @@
     font-size: 18px;
     color: #1ABC9C;
   }
-  .header-about{
+
+  .header-about {
     font-size: 30px;
-    font-family:Arial;
-    color:#34495E;
+    font-family: Arial;
+    color: #34495E;
     padding-top: 2%;
     padding-bottom: 2%;
   }
-  .mat-card-image{
+
+  .mat-card-image {
     height: 100px;
     width: 80px;
     margin-bottom: 0;
   }
-  .t{
+
+  .t {
     font-size: 20px;
     margin-top: 0;
   }
-  .box-aim{
+
+  .box-aim {
     font-size: 14px;
     line-height: 2;
     font-family: sans-serif;
-    color: #5D6D7E ;
+    color: #5D6D7E;
   }
 }
 

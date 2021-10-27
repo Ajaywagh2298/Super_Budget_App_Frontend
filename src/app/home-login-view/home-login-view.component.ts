@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
-import {CustomerLoginComponent} from "../customer-login/customer-login.component";
 import {HomeLrDividerComponent} from "../home-lr-divider/home-lr-divider.component";
 
 @Component({
@@ -10,12 +9,13 @@ import {HomeLrDividerComponent} from "../home-lr-divider/home-lr-divider.compone
 })
 export class HomeLoginViewComponent implements OnInit {
 
-  constructor(private dialogRef : MatDialog) { }
+  constructor(private dialogRef: MatDialog) {
+  }
 
   ngOnInit(): void {
   }
 
   openDialog() {
-   this.dialogRef.open(HomeLrDividerComponent)
+    this.dialogRef.open(HomeLrDividerComponent)
   }
 }

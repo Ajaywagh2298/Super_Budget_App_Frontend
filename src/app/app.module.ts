@@ -1,32 +1,35 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {AuthService} from "./services/AuthService";
 
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from "@angular/material/card";
 import {MatTableModule} from "@angular/material/table";
 import {MatButtonModule} from "@angular/material/button";
-import { CustomerComponent } from './customer/customer.component';
-import { CustomerLoginComponent } from './customer-login/customer-login.component';
-import { HeaderCustomerComponent } from './header-customer/header-customer.component';
-import { SidenavCustomerComponent } from './sidenav-customer/sidenav-customer.component';
-import { HomeCustomerComponent } from './home-customer/home-customer.component';
-import { DashboardCustomerComponent } from './dashboard-customer/dashboard-customer.component';
-import { AppRoutingModule } from './app-routing.module';
+import {CustomerComponent} from './customer/customer.component';
+import {CustomerLoginComponent} from './customer-login/customer-login.component';
+import {HeaderCustomerComponent} from './header-customer/header-customer.component';
+import {SidenavCustomerComponent} from './sidenav-customer/sidenav-customer.component';
+import {HomeCustomerComponent} from './home-customer/home-customer.component';
+import {DashboardCustomerComponent} from './dashboard-customer/dashboard-customer.component';
+import {AppRoutingModule} from './app-routing.module';
 import {RouterModule} from "@angular/router";
-import { HomeComponent } from './home/home.component';
+import {HomeComponent} from './home/home.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
-import { HomeHeaderComponent } from './home-header/home-header.component';
-import { HomeLoginViewComponent } from './home-login-view/home-login-view.component';
+import {HomeHeaderComponent} from './home-header/home-header.component';
+import {HomeLoginViewComponent} from './home-login-view/home-login-view.component';
 import {MatDividerModule} from "@angular/material/divider";
-import { HomeAboutComponent } from './home-about/home-about.component';
-import { HomeAimComponent } from './home-aim/home-aim.component';
-import { HomeFooterComponent } from './home-footer/home-footer.component';
-import {MatDialog, MatDialogModule} from "@angular/material/dialog";
-import { HomeLrDividerComponent } from './home-lr-divider/home-lr-divider.component';
+import {HomeAboutComponent} from './home-about/home-about.component';
+import {HomeAimComponent} from './home-aim/home-aim.component';
+import {HomeFooterComponent} from './home-footer/home-footer.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {HomeLrDividerComponent} from './home-lr-divider/home-lr-divider.component';
 import {MatTabsModule} from "@angular/material/tabs";
 import {FormsModule} from "@angular/forms";
+import {CustomerRegistrationComponent} from './customer-registration/customer-registration.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import {FormsModule} from "@angular/forms";
     HomeAboutComponent,
     HomeAimComponent,
     HomeFooterComponent,
-    HomeLrDividerComponent
+    HomeLrDividerComponent,
+    CustomerRegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -58,9 +62,11 @@ import {FormsModule} from "@angular/forms";
     MatDividerModule,
     MatDialogModule,
     MatTabsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

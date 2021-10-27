@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { HomeLrDividerComponent } from './home-lr-divider.component';
+import {HomeLrDividerComponent} from './home-lr-divider.component';
 
 describe('HomeLrDividerComponent', () => {
   let component: HomeLrDividerComponent;
@@ -8,9 +8,9 @@ describe('HomeLrDividerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeLrDividerComponent ]
+      declarations: [HomeLrDividerComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

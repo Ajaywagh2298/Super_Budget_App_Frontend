@@ -2,7 +2,8 @@
   flex: 1;
   margin-right: 50px;
 }
-.super{
+
+.super {
   font-size: 50px;
   position: relative;
   margin: 20px;
@@ -11,6 +12,7 @@
   font-family: Copperplate, Papyrus, fantasy;
   font-weight: bold;
 }
+
 .toolbar {
   position: relative;
   top: 0;
