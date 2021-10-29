@@ -1,0 +1,48 @@
+ul{
+  display: flex;
+}
+.user-img{
+  border: 2px;
+  border-color: #2E86C1;
+  border-radius: 100%;
+}
+mat-toolbar{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #8E44AD;
+  color: white;
+}
+
+ul{
+  li{
+    list-style: none;
+  }
+}
+.shop{
+  font-size: 20px;
+}
+.user {
+  font-size: 14px;
+}
+
+.user-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  &-icon {
+    height: 18px;
+    font-size: 16px;
+  }
+}
+::ng-deep{
+  .mat-menu-content{
+    width: 160px;
+  }
+}
+.user-del{
+  border: 3px white;
+  height: 100%;
+  width: 100%;
+
+}

@@ -1,1 +1,10 @@
-<p>customer works!</p>
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+      <app-sidenav-customer></app-sidenav-customer>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-header-customer (toggleSidebarForMe)="sideBarToggler()"></app-header-customer>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+

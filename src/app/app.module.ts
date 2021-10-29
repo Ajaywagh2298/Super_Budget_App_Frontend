@@ -31,6 +31,9 @@ import {FormsModule} from "@angular/forms";
 import {CustomerRegistrationComponent} from './customer-registration/customer-registration.component';
 import {HttpClientModule} from "@angular/common/http";
 import {MatListModule} from "@angular/material/list";
+import {MatSelectModule} from "@angular/material/select";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatMenuModule, MatMenuTrigger} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -50,23 +53,26 @@ import {MatListModule} from "@angular/material/list";
     HomeLrDividerComponent,
     CustomerRegistrationComponent
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        MatCardModule,
-        MatTableModule,
-        MatButtonModule,
-        AppRoutingModule,
-        RouterModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatDividerModule,
-        MatDialogModule,
-        MatTabsModule,
-        FormsModule,
-        HttpClientModule,
-        MatListModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatTableModule,
+    MatButtonModule,
+    AppRoutingModule,
+    RouterModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatDividerModule,
+    MatDialogModule,
+    MatTabsModule,
+    FormsModule,
+    HttpClientModule,
+    MatListModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatMenuModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

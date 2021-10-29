@@ -3,6 +3,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {HomeCustomerComponent} from "./home-customer/home-customer.component";
 import {DashboardCustomerComponent} from "./customer-dashboard/dashboard-customer.component";
 import {CustomerComponent} from "./customer/customer.component";
+import {SidenavCustomerComponent} from "./customer-sidenav/sidenav-customer.component";
 
 const routes: Routes = [
   {path: 'home-customer', component: HomeCustomerComponent},
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'customer-login', component: CustomerComponent},
   {path: 'customer', component: CustomerComponent},
   {path: 'dashboard', component: DashboardCustomerComponent},
+  {path: 'customer-sidenav', component: SidenavCustomerComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 
 ];

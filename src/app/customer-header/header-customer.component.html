@@ -1,1 +1,42 @@
-<p>header-customer works!</p>
+<mat-toolbar>
+  <mat-toolbar-row class="justify-content-between">
+    <button (click)="toggleSidebar()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="row mr-2 ml-auto">
+      <ul>
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu" class="user mt-2 d-flex align-items-center">
+            User Name
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+             <mat-icon>person</mat-icon>
+              User Details
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications</mat-icon>
+              Notification
+            </button>
+            <button mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              Logout
+            </button>
+          </mat-menu>
+        </li>
+        <li></li>
+        <li>
+          <button mat-button class="shop mt-2 text-center">
+            <i class="fas fa-user-headset"></i>
+          </button>
+        </li>
+        <li></li>
+        <li>
+          <button mat-button class="shop mt-2 text-center">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
