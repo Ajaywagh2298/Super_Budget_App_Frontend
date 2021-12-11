@@ -34,6 +34,8 @@ import {MatListModule} from "@angular/material/list";
 import {MatSelectModule} from "@angular/material/select";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatMenuModule, MatMenuTrigger} from '@angular/material/menu';
+import { MyListComponent } from './my-list/my-list.component';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import {MatMenuModule, MatMenuTrigger} from '@angular/material/menu';
     HomeAimComponent,
     HomeFooterComponent,
     HomeLrDividerComponent,
-    CustomerRegistrationComponent
+    CustomerRegistrationComponent,
+    MyListComponent,
+
   ],
   imports: [
     BrowserModule,
