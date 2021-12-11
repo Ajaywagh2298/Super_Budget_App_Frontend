@@ -1,0 +1,66 @@
+.card{
+  background-color:mediumpurple;
+
+}
+button {
+  color: #fff;
+  background-color: #000000;
+  margin-left:5px;
+  padding-top: 10px;
+  font-family:"Calisto MT";
+  border-radius: 5px 5px 5px 5px;
+  padding-right: 5px;
+  margin-right: 10px;
+
+}
+button:hover {
+  background-color: #ffffff;
+  color: white;
+  color: black;
+
+}
+tr td:hover {
+
+}
+input {
+  padding: 5px;
+}
+.container{
+  border-top-width: 50px;
+  font-family:"Calisto MT";
+  width: 70%;
+  height: 100%;
+  padding-top: 2%;
+}
+.first{
+  width: 10px;
+
+}
+th, td {
+  padding: 10px;
+}
+
+.container-table{
+  width: 90%;
+  padding-left: 10%;
+
+}
+#add_product{
+  width: 30%;
+  padding-top: 15px;
+  margin-bottom: 1px;
+}
+#upper_btns{
+  width: 10%;
+}
+#select_btn{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#delete_btn{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.table{
+
+}
