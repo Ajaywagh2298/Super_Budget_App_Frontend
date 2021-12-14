@@ -1,6 +1,5 @@
 .card{
-  background-color:mediumpurple;
-
+  background-color:#48C9B0;
 }
 button {
   color: #fff;
@@ -17,7 +16,6 @@ button:hover {
   background-color: #ffffff;
   color: white;
   color: black;
-
 }
 tr td:hover {
 
