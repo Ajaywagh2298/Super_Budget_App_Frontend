@@ -33,10 +33,12 @@
  margin-top: 5%;
   margin-left: 15%;
   margin-right: 15%;
-
 }
 
 
+#myCarousel{
+  backface-visibility: hidden;
+}
 
 //--------------------------------------------------------------
 
