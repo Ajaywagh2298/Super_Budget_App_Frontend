@@ -12,7 +12,7 @@ export class MyListComponent {
   todos = [
     { id: 1, label: 'Bring Milk', done: false },
     { id: 2, label: 'Soya oil', done: false},
-    { id: 3, label: 'Everest Masala', done: true},
+    { id: 3, label: 'Everest Masala', done: false},
   ];
 
   // tslint:disable-next-line:typedef
