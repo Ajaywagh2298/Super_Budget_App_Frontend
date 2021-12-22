@@ -6,6 +6,7 @@ import {CustomerComponent} from "./customer/customer.component";
 import {SidenavCustomerComponent} from "./customer-sidenav/sidenav-customer.component";
 import {MyListComponent} from "./my-list/my-list.component";
 import {UserDetailsComponent} from "./user-details/user-details.component";
+import {CustomerRegistrationComponent} from "./customer-registration/customer-registration.component";
 
 const routes: Routes = [
   {path: 'home-customer', component: HomeCustomerComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'customer-sidenav', component: SidenavCustomerComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'mylist', component: MyListComponent},
-  {path: 'user-details', component: UserDetailsComponent}
+  {path: 'user-details', component: UserDetailsComponent},
+  {path: 'signup', component: CustomerRegistrationComponent }
 
 ];
 
