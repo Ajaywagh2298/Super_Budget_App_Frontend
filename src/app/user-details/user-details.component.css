@@ -1,3 +1,53 @@
+
+mat-card{
+  width: 100%;
+  height: 100%;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 20%, rgba(238,82,235,1) 100%);
+}
+.card img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+}
+.fa{
+  margin-right: 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 90%;
+  margin: auto;
+  text-align: center;
+  background: rgb(238,174,202);
+  box-shadow: #5D6D7E;
+}
+.card:hover {
+  box-shadow: 0 18px 16px 0 rgba(10,10,0,0.2);
+}
+.card p{
+  margin-top: 5px;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   font-size: 22px;
@@ -7,38 +57,6 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+.right-card{
 
-.details a,p{
-  width: fit-content;
-  height: fit-content;
-  align-text: center;
-  text-decoration-color: #0d0d0d;
-
-}
-.container img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -40px;
-}
-.container p{
-  color: #0d0d0d;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-family: monospace;
-
-}
-#name{
-  font-size: 18px;
-}
-.fa{
-  margin-right: 19px;
-}
-.bottom-container{
-  border-style: outset;
-  margin-top: -90px;
-  text-align: center;
-
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));
 }
