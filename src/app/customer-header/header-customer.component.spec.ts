@@ -1,6 +1,8 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {HeaderCustomerComponent} from './header-customer.component';
+import {MatDialog} from "@angular/material/dialog";
+import {UserDetailsComponent} from "../user-details/user-details.component";
 
 describe('HeaderCustomerComponent', () => {
   let component: HeaderCustomerComponent;
@@ -23,3 +25,8 @@ describe('HeaderCustomerComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+export class DialogDataExample {
+  constructor(public dialog: MatDialog) {}
+
+
+}

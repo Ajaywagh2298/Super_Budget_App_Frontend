@@ -10,8 +10,8 @@
             User Name
           </button>
           <mat-menu #menu="matMenu">
-            <button mat-menu-item routerLink="/user-details">
-             <mat-icon>person</mat-icon>
+            <button mat-menu-item (click)="openDialog()">
+              <mat-icon>person</mat-icon>
               User Details
             </button>
             <button mat-menu-item>
