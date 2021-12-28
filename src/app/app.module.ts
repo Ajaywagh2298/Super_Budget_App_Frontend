@@ -36,6 +36,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatMenuModule, MatMenuTrigger} from '@angular/material/menu';
 import { MyListComponent } from './my-list/my-list.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { CustomerFeedbackComponent } from './customer-feedback/customer-feedback.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     CustomerRegistrationComponent,
     MyListComponent,
     UserDetailsComponent,
+    CustomerFeedbackComponent,
 
   ],
   imports: [
