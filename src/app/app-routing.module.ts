@@ -8,6 +8,10 @@ import {MyListComponent} from "./my-list/my-list.component";
 import {UserDetailsComponent} from "./user-details/user-details.component";
 import {CustomerRegistrationComponent} from "./customer-registration/customer-registration.component";
 import {CustomerFeedbackComponent} from "./customer-feedback/customer-feedback.component";
+import {OffersComponent} from "./offers/offers.component";
+import {OffersHeaderComponent} from "./offers-header/offers-header.component";
+import {OffersProductComponent} from "./offers-product/offers-product.component";
+import {OffersMainComponent} from "./offers-main/offers-main.component";
 
 const routes: Routes = [
   {path: 'home-customer', component: HomeCustomerComponent},
@@ -21,7 +25,11 @@ const routes: Routes = [
   {path: 'mylist', component: MyListComponent},
   {path: 'user-details', component: UserDetailsComponent},
   {path: 'signup', component: CustomerRegistrationComponent },
-  {path: 'feedback', component:CustomerFeedbackComponent}
+  {path: 'feedback', component:CustomerFeedbackComponent},
+  {path: 'offers', component:OffersComponent},
+  {path: 'offers-header', component: OffersHeaderComponent},
+  {path: 'offers-product', component: OffersProductComponent},
+  {path: 'offers-main', component:OffersMainComponent}
 
 ];
 
