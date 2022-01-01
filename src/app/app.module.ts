@@ -42,6 +42,8 @@ import { OffersHeaderComponent } from './offers-header/offers-header.component';
 import { OffersProductComponent } from './offers-product/offers-product.component';
 import { OffersMainComponent } from './offers-main/offers-main.component';
 import { FilterPipe } from './shared/filter.pipe';
+import { CustomerPurchaseComponent } from './customer-purchase/customer-purchase.component';
+import { CustomerNearbymallsComponent } from './customer-nearbymalls/customer-nearbymalls.component';
 
 
 @NgModule({
@@ -68,7 +70,9 @@ import { FilterPipe } from './shared/filter.pipe';
     OffersHeaderComponent,
     OffersProductComponent,
     OffersMainComponent,
-    FilterPipe
+    FilterPipe,
+    CustomerPurchaseComponent,
+    CustomerNearbymallsComponent
 
   ],
   imports: [
