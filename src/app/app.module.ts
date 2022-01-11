@@ -27,7 +27,7 @@ import {HomeFooterComponent} from './home-footer/home-footer.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {HomeLrDividerComponent} from './home-lr-divider/home-lr-divider.component';
 import {MatTabsModule} from "@angular/material/tabs";
-import {FormsModule} from "@angular/forms";
+import {FormsModule,ReactiveFormsModule} from "@angular/forms";
 import {CustomerRegistrationComponent} from './customer-registration/customer-registration.component';
 import {HttpClientModule} from "@angular/common/http";
 import {MatListModule} from "@angular/material/list";
@@ -41,7 +41,7 @@ import { OffersComponent } from './offers/offers.component';
 import { OffersHeaderComponent } from './offers-header/offers-header.component';
 import { OffersProductComponent } from './offers-product/offers-product.component';
 import { OffersMainComponent } from './offers-main/offers-main.component';
-import { FilterPipe } from './shared/filter.pipe';
+
 import { CustomerPurchaseComponent } from './customer-purchase/customer-purchase.component';
 import { CustomerNearbymallsComponent } from './customer-nearbymalls/customer-nearbymalls.component';
 
@@ -93,7 +93,8 @@ import { CustomerNearbymallsComponent } from './customer-nearbymalls/customer-ne
     MatListModule,
     MatSelectModule,
     MatSidenavModule,
-    MatMenuModule
+    MatMenuModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

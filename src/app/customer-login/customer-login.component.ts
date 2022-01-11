@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AuthService} from "../services/AuthService";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
+
 
 @Component({
   selector: 'app-customer-login',
@@ -8,6 +10,9 @@ import {AuthService} from "../services/AuthService";
 })
 export class CustomerLoginComponent implements OnInit {
 
+  constructor(private service: AuthService) {
+  }
+/*
   invalidLogin: any;
   errorMessage: 'Invalid Credentials' | undefined;
   username: any;
@@ -17,11 +22,11 @@ export class CustomerLoginComponent implements OnInit {
   loginSuccess: boolean | undefined;
 
 
-  constructor(private authService: AuthService) {
-  }
+
+
 
   handleLogin() {
-    this.authService.login(this.username, this.password).subscribe((result) => {
+   // this.authService.login(this.username, this.password).subscribe((result) => {
 
       this.invalidLogin = false;
       this.loginSuccess = true;
@@ -30,9 +35,28 @@ export class CustomerLoginComponent implements OnInit {
       this.invalidLogin = true;
       this.loginSuccess = false;
     });
-  }
+  }*/
+  processing: Boolean = false;
+  error: Boolean = false;
+  customerLogin = new FormGroup({
+    'username':new FormControl('',Validators.required),
+    'password':new FormControl('',Validators.required)
+  })
 
   ngOnInit(): void {
+  }
+
+  loginSubmit() {
+    if(this.customerLogin.valid) {
+      console.log(this.customerLogin.value);
+      this.service.loginData(this.customerLogin.value).subscribe((res)=>{
+        console.log(res,'res==>');
+        this.customerLogin.reset();
+      });
+    }
+    else{
+      console.log('Data Not Feels')
+    }
   }
 
 }

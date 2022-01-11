@@ -3,19 +3,18 @@
   <!-- <div class="wrapper fadeInDown">-->
   <div class="wrapper">
     <div id="formContent">
-      <div *ngIf='invalidLogin' class="alert alert-warning">{{errorMessage}}</div>
-      <div *ngIf='loginSuccess' class="alert alert-success">{{successMessage}}</div>
+
       <!-- Tabs Titles -->
       <h2>Login</h2>
       <!-- Login Form -->
-      <form>
+      <form (ngSubmit)="loginSubmit()" [formGroup]="customerLogin">
         <!-- <input type="text" id="username" class="fadeIn second" [(ngModel)]="username" name="username" placeholder="Enter username">
          <input type="password" id="password" class="fadeIn third" [(ngModel)]="password" name="password" placeholder="Enter password"> -->
 
-        <input [(ngModel)]="username" id="username" name="username" placeholder="Enter username" type="text">
-        <input [(ngModel)]="password" id="password" name="password" placeholder="Enter password" type="password">
+        <input formControlName="username" placeholder="Enter username" type="text">
+        <input formControlName="password" placeholder="Enter password" type="password">
 
-        <input (click)=handleLogin() class="fadeIn fourth" type="submit" value="Log In">
+        <input class="fadeIn fourth" type="submit" value="Log In">
       </form>
       <!--  <h5><u>You haven't account?</u><input type="button" (click)=handleLogin() class="fadeIn fifth" value="Sign Up"> </h5> -->
     </div>
