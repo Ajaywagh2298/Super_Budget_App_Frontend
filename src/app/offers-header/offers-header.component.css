@@ -1,14 +1,17 @@
 .form-control{
   border-radius: 3px;
   width: 600px;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-top: 5px;
-}
 
+}
+.btn{
+  color: coral;
+}
 .search-icon{
   position: absolute;
   z-index: 10;
-  right: 37%;
-  top: 27px;
-  color: blue;
+  right: 33%;
+  top: 32px;
+  color: #028a5f;
 }

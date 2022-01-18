@@ -38,7 +38,7 @@ export class CustomerNearbymallsComponent implements OnInit {
 
       const popup = L.popup()
         .setLatLng(latLong)
-        .setContent('Pune')
+        .setContent('Nagpur')
         .openOn(mymap);
     });
     this.watchPosition();
