@@ -7,7 +7,10 @@
       <span class="fas fa-search search-icon"></span>
 
     </div>
-    <button routerLink="./offers" class="btn btn-secondary">
+    <button type="button" class="btn btn-success">
+      <i class="fas fa-hand-holding-usd"></i>&nbsp; Set Budget</button>
+    <button routerLink="/offers" class="btn btn-secondary">
+      <router-outlet></router-outlet>
       <i style="font-size: 30px;color: aliceblue" class="fas fa-cart-plus"></i>
       <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div></button>
   </div>

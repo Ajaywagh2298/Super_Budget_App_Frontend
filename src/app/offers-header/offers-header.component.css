@@ -5,13 +5,13 @@
   margin-top: 5px;
 
 }
-.btn{
-  color: coral;
-}
+/*.btn{*/
+/*  color: coral;*/
+/*}*/
 .search-icon{
   position: absolute;
   z-index: 10;
-  right: 33%;
+  right: 39%;
   top: 32px;
   color: #028a5f;
 }
