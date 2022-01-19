@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  hostUrl: 'http://localhost:9200'
+  hostUrl: 'http://localhost:9200',
+  apiBaseUrl : '',
+  env : 'local'
 };
 
 /*

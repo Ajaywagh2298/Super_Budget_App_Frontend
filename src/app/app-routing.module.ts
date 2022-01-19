@@ -17,7 +17,6 @@ import {CustomerNearbymallsComponent} from "./customer-nearbymalls/customer-near
 
 const routes: Routes = [
   {path: 'home-customer', component: HomeCustomerComponent},
-  {path: 'customer-dashboard', component: DashboardCustomerComponent},
   {path: 'customer', component: CustomerComponent},
   {path: 'customer-login', component: CustomerComponent},
   {path: 'customer', component: CustomerComponent},

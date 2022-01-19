@@ -1,7 +1,9 @@
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {environment} from "../../environments/environment";
-import {Observable} from "rxjs";
+import {BehaviorSubject, Observable, Subject} from "rxjs";
+import{ CustomerModel} from "./customer.model";
+import {catchError, map, tap } from "rxjs/operators";
 
 @Injectable({
   providedIn: "root"
@@ -37,9 +39,16 @@ export class AuthService {
 
   loginApiUrl='http://localhost:8081/customer/login';
   loginData(data:any):Observable<any>{
-    console.log(data,'loginApi=>');
+    console.log(data,'loginApi ==>');
+    console.log('------------------------');
     return this.http.post(`${this.loginApiUrl}`,data);
-
-
   }
+
+
+
+  //--------------------------------------------------------------------------------------------------------------------
+
+
+  //--------------------------------------------------------------------------------------------------------------------
+
 }

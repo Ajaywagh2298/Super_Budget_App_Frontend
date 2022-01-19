@@ -7,16 +7,23 @@
       <!-- Tabs Titles -->
       <h2>Login</h2>
       <!-- Login Form -->
-      <form (ngSubmit)="loginSubmit()" [formGroup]="customerLogin">
+      <form [formGroup]="customerLoginForm" (ngSubmit)="customerLogin()">
         <!-- <input type="text" id="username" class="fadeIn second" [(ngModel)]="username" name="username" placeholder="Enter username">
          <input type="password" id="password" class="fadeIn third" [(ngModel)]="password" name="password" placeholder="Enter password"> -->
 
+      <!--  <input formControlName="username" [ngClass]="{'required': checkField(loginForm.get('username'))}"
+               placeholder="Enter username" type="text">
+        <input formControlName="password" [ngClass]="{'required': checkField(loginForm.get('password'))}"
+               placeholder="Enter password" type="password"> -->
         <input formControlName="username" placeholder="Enter username" type="text">
         <input formControlName="password" placeholder="Enter password" type="password">
 
-        <input class="fadeIn fourth" type="submit" value="Log In">
-      </form>
-      <!--  <h5><u>You haven't account?</u><input type="button" (click)=handleLogin() class="fadeIn fifth" value="Sign Up"> </h5> -->
-    </div>
-  </div>
-</div>
+       <input class="fadeIn fourth" type="submit" value="Log In">
+        <!--   <button id="submitButton" class="fadeIn fourth" type="button" [disabled]="!loginForm.valid || processing"
+                 (click)="onSubmitButtonClicked()">{{ processing ? 'Validating...' : 'Sign in' }}</button> -->
+
+       </form>
+     </div>
+   </div>
+ </div>
+

@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {AuthService} from "../services/AuthService";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
+
 
 
 @Component({
@@ -10,53 +12,107 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class CustomerLoginComponent implements OnInit {
 
-  constructor(private service: AuthService) {
+  constructor(
+    private service: AuthService,
+    private router: Router,
+  ) {
   }
-/*
-  invalidLogin: any;
-  errorMessage: 'Invalid Credentials' | undefined;
-  username: any;
-  password: any;
-  successMessage: any;
-  result: any;
-  loginSuccess: boolean | undefined;
 
-
-
-
-
-  handleLogin() {
-   // this.authService.login(this.username, this.password).subscribe((result) => {
-
-      this.invalidLogin = false;
-      this.loginSuccess = true;
-      this.successMessage = 'Login Successfull..!!';
-    }, () => {
-      this.invalidLogin = true;
-      this.loginSuccess = false;
-    });
-  }*/
+  customerLoginForm = new FormGroup({
+    'username': new FormControl('', Validators.required),
+    'password': new FormControl('', Validators.required),
+  });
+  loginForm: any;
   processing: Boolean = false;
   error: Boolean = false;
-  customerLogin = new FormGroup({
-    'username':new FormControl('',Validators.required),
-    'password':new FormControl('',Validators.required)
-  })
+  //checkField  = CheckRequiredField;
 
-  ngOnInit(): void {
-  }
 
-  loginSubmit() {
-    if(this.customerLogin.valid) {
-      console.log(this.customerLogin.value);
-      this.service.loginData(this.customerLogin.value).subscribe((res)=>{
-        console.log(res,'res==>');
-        this.customerLogin.reset();
+  /* --------------------------------------------------------------------------------------------------------
+    invalidLogin: any;
+    errorMessage: 'Invalid Credentials' | undefined;
+    username: any;
+    password: any;
+    successMessage: any;
+    result: any;
+    loginSuccess: boolean | undefined;
+
+    handleLogin() {
+     // this.authService.login(this.username, this.password).subscribe((result) => {
+
+        this.invalidLogin = false;
+        this.loginSuccess = true;
+        this.successMessage = 'Login Successfull..!!';
+      }, () => {
+        this.invalidLogin = true;
+        this.loginSuccess = false;
       });
     }
-    else{
-      console.log('Data Not Feels')
-    }
+    ---------------------------------------------------------------------------------------------------*/
+
+
+  ngOnInit(): void {
+
   }
 
+
+ /* private login() {
+    this.processing = true;
+    this.service.loginData(this.customerLoginForm.value).then(
+      (data: any) => {
+        if (data) {
+          this.handleLoginSuccess();
+        } else {
+          this.handleLoginError();
+        }
+      },
+      (err: any) => {
+        console.log(' ---- ERROR ---- ');
+        console.log(err);
+        this.handleLoginError();
+      });
+  } */
+
+  private handleLoginSuccess() {
+    console.log("Handle login success")
+
+    this.processing = false;
+    this.error = false;
+    this.router.navigate(['/dashboard']);
+
+  }
+
+  private handleLoginError() {
+    console.log("Handle login error")
+    this.processing = false;
+    this.error = true;
+  }
+
+  private initForm() {
+    this.customerLoginForm = new FormGroup({
+      username: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', Validators.required),
+    });
+  }
+
+
+  customerLogin() {
+    if (this.customerLoginForm.valid) {
+      console.log(this.customerLoginForm.value);
+      this.service.loginData(this.customerLoginForm.value).subscribe(res => {
+
+        const data = this.service.loginData(this.customerLoginForm.value);
+
+            if (data) {
+             // this.handleLoginSuccess();
+             //this.router.navigate(['/dashboard']);
+              var url= "http://localhost:4200/dashboard";
+             window.location.href = url;
+            } else {
+              this.handleLoginError();
+            }
+      });
+
+    }
+  }
 }

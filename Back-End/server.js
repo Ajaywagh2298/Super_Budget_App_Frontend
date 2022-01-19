@@ -11,7 +11,7 @@ app.use(bodyparser.json())
 const db = mysql.createConnection({
   host:'localhost',
   user:'root',
-  password:'root',
+  password:'',
   database:'super_db',
   port:3306
 });
@@ -61,34 +61,33 @@ app.get('/customer/:id',(req,res)=>{
 });
 
 app.post('/customer/register',(req,res)=>{
-   console.log(req.body,'createData');
+  console.log(req.body,'createData');
 
-    let fullname = req.body.fullname;
-    let username = req.body.username;
-    let email = req.body.email;
-    let mobile = req.body.mobile;
-    let password = req.body.password;
-    let dob = req.body.dob;
+  let fullname = req.body.fullname;
+  let username = req.body.username;
+  let email = req.body.email;
+  let mobile = req.body.mobile;
+  let password = req.body.password;
+  let dob = req.body.dob;
 
-    let qr =`insert into customer_t(cid,fullname,username,email,mobile,password,dob)values(NULL,'${fullname}','${username}','${email}','${mobile}','${password}','${dob}')`;
+  let qr =`insert into customer_t(cid,fullname,username,email,mobile,password,dob)values(NULL,'${fullname}','${username}','${email}','${mobile}','${password}','${dob}')`;
 
-    db.query(qr,(err,result)=>{
-      if(err){console.log(err);}
+  db.query(qr,(err,result)=>{
+    if(err){console.log(err);}
 
-      if(result.length>0){
-        res.send({
-          message:'data inserted'
-        });
-      }else{
-        res.send({
-          message:'wrong'
-        });
-      }
+    if(result.length>0){
+      res.send({
+        message:'data inserted'
+      });
+    }else{
+      res.send({
+        message:'wrong'
+      });
+    }
   });
 });
 
 /*app.put('/customer/update/:id',(req,res)=>{
-
   console.log(req.body,'updatedata');
   let cid = req.body.cid;
   let fullname = req.body.username;
@@ -97,13 +96,10 @@ app.post('/customer/register',(req,res)=>{
   let mobile = req.body.mobile;
   let password = req.body.password;
   let dob = req.body.dob;
-
   let qr =`update customer set 'fullname'=${fullname},'username'=${username},'email'=${email},'mobile'=${mobile},'password'=${password}
     where cid=${cid}`;
-
   db.query(qr,(err,result)=>{
     if(err){console.log(err);}
-
     res.send({
       message:'data updated'
     });
@@ -117,7 +113,7 @@ app.post('/customer/login',(req,res)=>{
 
   console.log(username, password)
 
-  let qr = `select * from customer_t where username="${username}" AND password="${password}"`;
+  let qr = `select * from customer_t where username='${username}'AND password='${password}'`;
   console.log(qr)
 
   db.query(qr,(err,result)=> {
@@ -126,12 +122,16 @@ app.post('/customer/login',(req,res)=>{
     }
 
     if (result) {
+      console.log('result is true')
       res.send({
         message:'Login Successful'
       });
-      //res.redirect('http://127.0.0.1:4200/dashboard');
+      //res.redirect('http://localhost:4200/dashboard');
     } else {
-      res.redirect('http://localhost:8081/customer/login');
+     res.statusCode = 401;
+     res.send({
+       message:'Invalid credentials'
+     });
     }
   });
 });
