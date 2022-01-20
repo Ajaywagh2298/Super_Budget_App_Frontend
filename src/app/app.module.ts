@@ -44,7 +44,7 @@ import { OffersMainComponent } from './offers-main/offers-main.component';
 
 import { CustomerPurchaseComponent } from './customer-purchase/customer-purchase.component';
 import { CustomerNearbymallsComponent } from './customer-nearbymalls/customer-nearbymalls.component';
-
+import{SetBudgetComponent} from "./offers-header/offers-header.component";
 
 @NgModule({
   declarations: [
@@ -72,8 +72,8 @@ import { CustomerNearbymallsComponent } from './customer-nearbymalls/customer-ne
     OffersMainComponent,
     FilterPipe,
     CustomerPurchaseComponent,
-    CustomerNearbymallsComponent
-
+    CustomerNearbymallsComponent,
+    SetBudgetComponent
   ],
   imports: [
     BrowserModule,

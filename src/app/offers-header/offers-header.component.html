@@ -9,7 +9,7 @@
     </div>
     <button (click)="openDialog()" class="btn btn-success">
       <i class="fas fa-hand-holding-usd"></i>&nbsp; Set Budget</button>
-    <p><i>{{value}}</i></p>
+    <p>{{set.onEnter()}}</p>
 
     <button routerLink="/offers" class="btn btn-success">
       <router-outlet></router-outlet>
