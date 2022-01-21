@@ -118,7 +118,7 @@ app.post('/customer/login',(req,res)=>{
   console.log(qr)
 
   db.query(qr,(err,result)=> {
-    if (err) {
+  /*  if (err) {
       console.log(err);
       res.statusCode = 401;
       res.send({
@@ -129,9 +129,9 @@ app.post('/customer/login',(req,res)=>{
       res.send({
         message:'Login Successful'
       });
-    }
+    } */
 
-  /*  if (result) {
+  if (result.length > 0) {
       console.log('result is true')
       res.send({
         message:'Login Successful'
@@ -142,7 +142,8 @@ app.post('/customer/login',(req,res)=>{
      res.send({
        message:'Invalid credentials'
      });
-    } */
+    }
+  res.end();
   });
 });
 

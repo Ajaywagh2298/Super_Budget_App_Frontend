@@ -18,11 +18,11 @@ export class CustomerLoginComponent implements OnInit {
   ) {
   }
 
-  customerLoginForm = new FormGroup({
-    'username': new FormControl('', Validators.required),
-    'password': new FormControl('', Validators.required),
-  });
-  loginForm: any;
+customerLoginForm = new FormGroup({
+   'username': new FormControl('', Validators.required),
+   'password': new FormControl('', Validators.required),
+ });
+
   processing: Boolean = false;
   error: Boolean = false;
   //checkField  = CheckRequiredField;
@@ -74,12 +74,11 @@ export class CustomerLoginComponent implements OnInit {
   } */
 
   private handleLoginSuccess() {
-    console.log("Handle login success")
 
-    this.processing = false;
+    this.processing = true;
     this.error = false;
     this.router.navigate(['/dashboard']);
-
+    console.log("Handle login success")
   }
 
   private handleLoginError() {
@@ -88,12 +87,11 @@ export class CustomerLoginComponent implements OnInit {
     this.error = true;
   }
 
-  private initForm() {
-    this.customerLoginForm = new FormGroup({
-      username: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', Validators.required),
-    });
-  }
+ // private initForm() {
+  //    username: new FormControl('', [Validators.required]),
+   //   password: new FormControl('', Validators.required),
+   // });
+  //}
 
 
   customerLogin() {
@@ -103,11 +101,11 @@ export class CustomerLoginComponent implements OnInit {
 
         const data = this.service.loginData(this.customerLoginForm.value);
 
-            if (data) {
-             // this.handleLoginSuccess();
+            if (data!=null) {
+             this.handleLoginSuccess();
              //this.router.navigate(['/dashboard']);
-              var url= "http://localhost:4200/dashboard";
-             window.location.href = url;
+             // var url= "http://localhost:4200/dashboard";
+            // window.location.href = url;
             } else {
               this.handleLoginError();
             }

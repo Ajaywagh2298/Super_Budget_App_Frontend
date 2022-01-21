@@ -14,6 +14,7 @@ import {OffersProductComponent} from "./offers-product/offers-product.component"
 import {OffersMainComponent} from "./offers-main/offers-main.component";
 import {CustomerPurchaseComponent} from "./customer-purchase/customer-purchase.component";
 import {CustomerNearbymallsComponent} from "./customer-nearbymalls/customer-nearbymalls.component";
+import {AdminLoginComponent} from "./admin-login/admin-login.component";
 
 const routes: Routes = [
   {path: 'home-customer', component: HomeCustomerComponent},
@@ -32,7 +33,8 @@ const routes: Routes = [
   {path: 'offers-product', component: OffersProductComponent},
   {path: 'offers-main', component:OffersMainComponent},
   {path: 'purchase', component:CustomerPurchaseComponent},
-  {path: 'nearbymalls', component:CustomerNearbymallsComponent}
+  {path: 'nearbymalls', component:CustomerNearbymallsComponent},
+  {path: 'adminLogin', component:AdminLoginComponent}
 
 ];
 

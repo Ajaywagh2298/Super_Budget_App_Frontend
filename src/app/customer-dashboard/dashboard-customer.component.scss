@@ -1,44 +1,63 @@
-.page{
-  color: white;
-  padding: 0 1rem;
-  background: white;
-  margin-top: 3%;
-
-  &__box{
-    height: 80px;
-    margin-left: 3%;
-    margin-right: 50%;
-    font-size: 36px;
-    border-radius: 10px;
-    background: #138D75;
-  }
-
-  &__content{
-    min-height: calc(100vh - 178px);
-    border-radius: 10px;
-    margin-top: -1rem;
-    color: #0d0d0d;
-    background: white;
-    font-size: 2rem;
-  }
-
-  &-data{
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-
-}
-.img-box{
- margin-top: 5%;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-
-#myCarousel{
-  backface-visibility: hidden;
-}
 
 //--------------------------------------------------------------
+.box{
+  height: 400px;
+}
+.ser-t{
+ margin-left: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+}
+.col-lg-2{
+  padding-top: 1%;
+  padding-left: 1%;
+  margin: 2%;
+  width: 300px;
+  height: 400px;
+}
+.icon1{
+  font-size: 60px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.icon1-box{
+  font-size: 14px;
+  padding-top: 25px;
+}
+.title{
+  text-align: center;
+  margin-top: 15px;
+}
+.card-img-1{
+  height: 90%;
+  width: 90%;
+  margin-left:15px;
+  padding-top: 15%;
+}
+.card-img-2{
+  height: 70%;
+  width: 70%;
+  margin-left:40px;
+  padding-top: 15%;
+}
+.card-img-3{
+  height: 70%;
+  width: 65%;
+  margin-left:40px;
+  padding-top: 15%;
+}
+.card-img-4{
+  height: 213px;
+  width: 80%;
+  margin-left:40px;
+  padding-top: 15%;
+}
+.footer-title{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 40px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bolder;
+}
+
 

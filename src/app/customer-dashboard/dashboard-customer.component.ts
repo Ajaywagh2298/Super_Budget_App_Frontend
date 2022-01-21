@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./dashboard-customer.component.scss']
 })
 export class DashboardCustomerComponent implements OnInit {
+  value: any= 5000;
 
   constructor() {
   }

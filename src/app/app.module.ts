@@ -45,6 +45,10 @@ import { OffersMainComponent } from './offers-main/offers-main.component';
 import { CustomerPurchaseComponent } from './customer-purchase/customer-purchase.component';
 import { CustomerNearbymallsComponent } from './customer-nearbymalls/customer-nearbymalls.component';
 import{SetBudgetComponent} from "./offers-header/offers-header.component";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatStepperModule} from "@angular/material/stepper";
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import {MatDatepickerModule} from "@angular/material/datepicker";
 
 @NgModule({
   declarations: [
@@ -73,30 +77,34 @@ import{SetBudgetComponent} from "./offers-header/offers-header.component";
     FilterPipe,
     CustomerPurchaseComponent,
     CustomerNearbymallsComponent,
-    SetBudgetComponent
+    SetBudgetComponent,
+    AdminLoginComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatTableModule,
-    MatButtonModule,
-    AppRoutingModule,
-    RouterModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatDividerModule,
-    MatDialogModule,
-    MatTabsModule,
-    FormsModule,
-    HttpClientModule,
-    MatListModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatMenuModule,
-    ReactiveFormsModule
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        MatTableModule,
+        MatButtonModule,
+        AppRoutingModule,
+        RouterModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatDividerModule,
+        MatDialogModule,
+        MatTabsModule,
+        FormsModule,
+        HttpClientModule,
+        MatListModule,
+        MatSelectModule,
+        MatSidenavModule,
+        MatMenuModule,
+        ReactiveFormsModule,
+        MatProgressSpinnerModule,
+        MatStepperModule,
+        MatDatepickerModule
 
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
