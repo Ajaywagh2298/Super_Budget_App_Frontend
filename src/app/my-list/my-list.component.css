@@ -1,5 +1,6 @@
 .card{
   background-color: #49dabb;
+
 }
 button {
   color: #fff;
@@ -10,8 +11,13 @@ button {
   border-radius: 5px 5px 5px 5px;
   padding-right: 5px;
   margin-right: 10px;
-
 }
+
+#add_product{
+  height: auto;
+  width: auto;
+}
+
 button:hover {
   background-color: #ffffff;
   color: white;
@@ -29,6 +35,7 @@ input {
   width: 70%;
   height: 100%;
   padding-top: 2%;
+  font-size: 10px;
 }
 .first{
   width: 10px;
