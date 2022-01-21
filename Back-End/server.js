@@ -2,6 +2,7 @@ const express = require('express')
 const bodyparser = require('body-parser')
 const cors = require('cors')
 const mysql = require('mysql2')
+const {resolveObjectURL} = require("buffer");
 const app = express()
 
 app.use(cors())
@@ -113,15 +114,24 @@ app.post('/customer/login',(req,res)=>{
 
   console.log(username, password)
 
-  let qr = `select * from customer_t where username='${username}'AND password='${password}'`;
+  let qr = `select * from customer_t where username='${username}' AND password='${password}'`;
   console.log(qr)
 
   db.query(qr,(err,result)=> {
     if (err) {
       console.log(err);
+      res.statusCode = 401;
+      res.send({
+        message:'Invalid credentials'
+      });
+    }else{
+      console.log('result is true')
+      res.send({
+        message:'Login Successful'
+      });
     }
 
-    if (result) {
+  /*  if (result) {
       console.log('result is true')
       res.send({
         message:'Login Successful'
@@ -132,7 +142,7 @@ app.post('/customer/login',(req,res)=>{
      res.send({
        message:'Invalid credentials'
      });
-    }
+    } */
   });
 });
 
