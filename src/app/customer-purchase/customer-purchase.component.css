@@ -1,6 +1,41 @@
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+/*.center {*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    width: 50%;*/
+/*}*/
+body {
+    font-family: Arial;
+}
+
+.coupon {
+    width: 435px;
+    border-radius: 15px;
+
+    border: 10px solid transparent;
+    padding: 15px;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img{
+    width:365px;
+    height:390px;
+}
+p{
+    font-size: 100px;
+    color: darkblue;
+}
+
+.promo {
+    background: #ccc;
+    padding: 3px;
+
+}
+h1{
+    text-align: center;
+    color: #000000;
+}
+.expire {
+    color: red;
 }
