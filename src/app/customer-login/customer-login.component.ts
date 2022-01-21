@@ -77,7 +77,7 @@ customerLoginForm = new FormGroup({
 
     this.processing = true;
     this.error = false;
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/feedback']).then(r => {console.log("URL not navigate");});
     console.log("Handle login success")
   }
 

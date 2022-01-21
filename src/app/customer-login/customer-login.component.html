@@ -7,7 +7,8 @@
       <!-- Tabs Titles -->
       <h2>Login</h2>
       <!-- Login Form -->
-      <form [formGroup]="customerLoginForm" (ngSubmit)="customerLogin()">
+<!--    <form [formGroup]="customerLoginForm" (ngSubmit)="customerLogin()">-->
+        <form [formGroup]="customerLoginForm" (ngSubmit)="customerLogin()">
         <!-- <input type="text" id="username" class="fadeIn second" [(ngModel)]="username" name="username" placeholder="Enter username">
          <input type="password" id="password" class="fadeIn third" [(ngModel)]="password" name="password" placeholder="Enter password"> -->
 
@@ -18,7 +19,8 @@
         <input formControlName="username" placeholder="Enter username" type="text">
         <input formControlName="password" placeholder="Enter password" type="password">
 
-       <input class="fadeIn fourth" type="submit" value="Log In">
+       <input class="fadeIn fourth" type="submit" value="Log In" routerLink="/customer">
+
         <!--   <button id="submitButton" class="fadeIn fourth" type="button" [disabled]="!loginForm.valid || processing"
                  (click)="onSubmitButtonClicked()">{{ processing ? 'Validating...' : 'Sign in' }}</button> -->
 
@@ -26,4 +28,3 @@
      </div>
    </div>
  </div>
-

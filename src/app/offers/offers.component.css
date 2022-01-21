@@ -47,3 +47,8 @@ h6 {
   width: 190px;
   height: 35px;
 }
+.container{
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 100%;
+}
