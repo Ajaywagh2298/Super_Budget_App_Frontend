@@ -1,7 +1,4 @@
 <app-offers-header></app-offers-header>
-<!--<app-offers-header (Myevent)="Message='$event'"></app-offers-header>-->
-<h1>{{"Message from child:"+Message}}</h1>
-<h1>{{"Message from child:"+fun()}}</h1>
 <div class="card-top container-fluid">
   <div class="container d-flex">
     <div class="item">
@@ -39,7 +36,7 @@
         <img src="{{item.image}}" alt="">
         <h3 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.title}}</h3>
         <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.description}}</p>
-        <p><strong>Price:</strong>${{item.price}}</p>
+        <p><strong>Price:</strong>&nbsp;&#8377; {{item.price}}</p>
         <button class="btn btn-success" (click)=addtocart(item)>Add To Cart</button>
 
       </div>

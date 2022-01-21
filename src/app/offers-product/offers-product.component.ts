@@ -4,7 +4,7 @@ import {OffersService} from "../services/offers.service";
 import {FormControl, FormGroup, Validators } from '@angular/forms';
 import{MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
-import {OffersHeaderComponent} from "../offers-header/offers-header.component";
+//import {OffersHeaderComponent} from "../offers-header/offers-header.component";
 import { Injectable } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 
@@ -22,7 +22,7 @@ export class OffersProductComponent implements OnInit {
   public Message : string ="";
 
 
-  constructor(public dialog: MatDialog, private api: ApiService, private OffersService: OffersService, public OffersHeaderComponent: OffersHeaderComponent) { }
+  constructor(public dialog: MatDialog, private api: ApiService, private OffersService: OffersService) { }
 
   ngOnInit(): void {
     this.api.getProduct()
