@@ -41,7 +41,7 @@ import { OffersComponent } from './offers/offers.component';
 import { OffersHeaderComponent } from './offers-header/offers-header.component';
 import { OffersProductComponent } from './offers-product/offers-product.component';
 import { OffersMainComponent } from './offers-main/offers-main.component';
-
+import { environment } from '../environments/environment';
 import { CustomerPurchaseComponent } from './customer-purchase/customer-purchase.component';
 import { CustomerNearbymallsComponent } from './customer-nearbymalls/customer-nearbymalls.component';
 import{SetBudgetComponent} from "./offers-header/offers-header.component";
@@ -49,6 +49,9 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatStepperModule} from "@angular/material/stepper";
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import {MatDatepickerModule} from "@angular/material/datepicker";
+import { ScanMainComponent } from './scan-main/scan-main.component';
+import { ScanCartComponent } from './scan-cart/scan-cart.component';
+import {ServiceWorkerModule, SwRegistrationOptions } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -78,7 +81,9 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
     CustomerPurchaseComponent,
     CustomerNearbymallsComponent,
     SetBudgetComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    ScanMainComponent,
+    ScanCartComponent
   ],
     imports: [
         BrowserModule,
@@ -102,10 +107,20 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
         ReactiveFormsModule,
         MatProgressSpinnerModule,
         MatStepperModule,
-        MatDatepickerModule
+        MatDatepickerModule,
+        ServiceWorkerModule.register('ngsw-worker.js')
 
     ],
-  providers: [],
+  providers: [{
+      provide: SwRegistrationOptions,
+      useFactory: () => {
+          return {
+              enabled: environment.production,
+              registrationStrategy: 'registerImmediately'
+          };
+      }
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

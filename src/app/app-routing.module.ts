@@ -15,6 +15,8 @@ import {OffersMainComponent} from "./offers-main/offers-main.component";
 import {CustomerPurchaseComponent} from "./customer-purchase/customer-purchase.component";
 import {CustomerNearbymallsComponent} from "./customer-nearbymalls/customer-nearbymalls.component";
 import {AdminLoginComponent} from "./admin-login/admin-login.component";
+import {ScanMainComponent} from "./scan-main/scan-main.component";
+import {ScanCartComponent} from "./scan-cart/scan-cart.component";
 
 const routes: Routes = [
   {path: 'home-customer', component: HomeCustomerComponent},
@@ -34,7 +36,9 @@ const routes: Routes = [
   {path: 'offers-main', component:OffersMainComponent},
   {path: 'purchase', component:CustomerPurchaseComponent},
   {path: 'nearbymalls', component:CustomerNearbymallsComponent},
-  {path: 'adminLogin', component:AdminLoginComponent}
+  {path: 'adminLogin', component:AdminLoginComponent},
+  {path:'scanner' ,component: ScanMainComponent},
+  {path: 'scan-cart', component:ScanCartComponent}
 
 ];
 
