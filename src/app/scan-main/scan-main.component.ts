@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { BeepService } from '../services/beep.service';
 // import Quagga from "@ericblade/quagga2";
-import Quagga from "@ericblade/quagga2";
+import Quagga from '@ericblade/quagga2';
 import { Article } from './article';
 import { ShoppingCart } from './shopping-cart';
 import { UpdateService } from '../services/update.service';
@@ -22,11 +22,11 @@ export class ScanMainComponent implements AfterViewInit {
   totalPrice: number = 0;
 
   private catalogue: Article[] = [
-    { name: 'gouri', ean: '7601234567890', image: 'assets/classy_crab_red.png', price: 10 },
-    { name: 'Kamlesh', ean: '7601234561232', image: 'assets/classy_crab_blue.png', price: 10 },
-    { name: 'kiran', ean: '7601234564561', image: 'assets/classy_crab_gold.png', price: 50 },
-    { name: 'prachi', ean: '7645678901001', image: 'assets/classy_crab_gold.png', price: 5 },
-    { name: 'ajay', ean: '9780201379624', image: 'assets/classy_crab_red.png', price: 100 },
+    { name: 'Cadbury Dairy Milk Silk', ean: '7601234567890', image: 'assets/cadbury.jpg', price: 10 },
+    { name: 'Mi Smart TV', ean: '7601234561232', image: 'assets/img/tv.png', price: 36000 },
+    { name: 'clothes', ean: '7601234564561', image: 'assets/img/brand_04.png', price: 50 },
+    { name: 'Vegetable', ean: '7645678901001', image: 'assets/img/vegetable.png', price: 5 },
+    { name: 'Makeup', ean: '9780201379624', image: 'assets/img/makeup.png', price: 100 },
   ];
 
   private shoppingCart: ShoppingCart;
@@ -165,9 +165,9 @@ export class ScanMainComponent implements AfterViewInit {
   private createUnknownArticle(code: string): Article {
     return {
       ean: code,
-      name: `Code ${code}`,
-      image: 'assets/classy_crab_unknown.png',
-      price: 42
+      name: `Unknown Data`,
+      image: 'assets/img/ajax-loader.gif',
+      price: 0
     }
   }
 

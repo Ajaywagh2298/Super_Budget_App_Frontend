@@ -52,6 +52,7 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import { ScanMainComponent } from './scan-main/scan-main.component';
 import { ScanCartComponent } from './scan-cart/scan-cart.component';
 import {ServiceWorkerModule, SwRegistrationOptions } from '@angular/service-worker';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 
 @NgModule({
   declarations: [
@@ -108,7 +109,8 @@ import {ServiceWorkerModule, SwRegistrationOptions } from '@angular/service-work
         MatProgressSpinnerModule,
         MatStepperModule,
         MatDatepickerModule,
-        ServiceWorkerModule.register('ngsw-worker.js')
+        ServiceWorkerModule.register('ngsw-worker.js'),
+        MatSlideToggleModule
 
     ],
   providers: [{

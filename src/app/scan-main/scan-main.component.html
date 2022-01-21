@@ -1,39 +1,36 @@
 <div class="error-message" *ngIf="errorMessage">
-    {{ errorMessage }}
+  {{ errorMessage }}
 </div>
 
-<div id="scanner-container">
-    <!-- QuaggaJS will populate this element -->
+<div id="scanner-container" class="shadow-lg">
+  <!-- QuaggaJS will populate this element -->
 </div>
+<div class="controls row">
+  <div class="col-sm-4"> </div>
+  <div class="col-sm-4">
+  <form>
 
-<div class="instructions">
-    This is a companion app for the blog post located <a target="_blank" href="https://blog.classycode.com/">here</a>.
-    The source code is available on <a target="_blank" href="https://github.com/classycodeoss/mobile-scanning-demo">Github</a>.
+    <input id="acceptAnyCode" type="checkbox" class="custom-control-input" [(ngModel)]="acceptAnyCode" name="acceptAnyCode" />&nbsp;
+    <label for="acceptAnyCode">Accept any code</label>
+      &nbsp;
+    <button (click)="clearCart()" class="btn btn-primary " style="width: 200px">Clear cart</button>
+  </form>
+  </div>
 </div>
-
-<div class="controls">
-    <form>
-        <input id="acceptAnyCode" type="checkbox" [(ngModel)]="acceptAnyCode" name="acceptAnyCode" required/>
-        <label for="acceptAnyCode">Accept any code</label>
-        &nbsp;
-        <button (click)="clearCart()">Clear cart</button>
-    </form>
-
-</div>
+<br>
 
 <div class="shopping-cart">
+  <span *ngIf="items.length === 0 else shoppingCartItems"  class="alert alert-danger col-sm-10" role="alert">Shopping cart is empty</span>
+  <ng-template #shoppingCartItems>
 
-    <span *ngIf="items.length === 0 else shoppingCartItems">Shopping cart is empty</span>
-    <ng-template #shoppingCartItems>
+    <app-scan-cart
+      *ngFor="let articleAndCount of items"
+      [article]="articleAndCount[0]"
+      [count]="articleAndCount[1]">
+    </app-scan-cart>
 
-        <app-scan-cart
-                *ngFor="let articleAndCount of items"
-                [article]="articleAndCount[0]"
-                [count]="articleAndCount[1]">
-        </app-scan-cart>
-
-        <div class="shopping-cart-total">
-            Total: {{ totalPrice }} ₹
-        </div>
-    </ng-template>
+    <div class="shopping-cart-total">
+      <b>Total: </b> <b style="font-size: 30px">{{ totalPrice }} ₹</b>
+    </div>
+  </ng-template>
 </div>
