@@ -9,11 +9,12 @@
     </div>
     <button (click)="openDialog()" class="btn btn-success">
       <i class="fas fa-hand-holding-usd"></i>&nbsp; Set Budget</button>
-    <p>{{set.onEnter()}}</p>
+    <p>1000</p>
 
     <button routerLink="/offers" class="btn btn-success">
       <router-outlet></router-outlet>
       <i style="font-size: 30px;color: aliceblue" class="fas fa-cart-plus"></i>
+
       <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div></button>
   </div>
 

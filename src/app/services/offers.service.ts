@@ -9,6 +9,7 @@ export class OffersService {
   public cartItemList: any=[];
   public productList= new BehaviorSubject<any>([]);
   public search = new BehaviorSubject<string>("");
+  public budget:number=0;
   constructor() { }
 
   getProducts(){
@@ -25,6 +26,18 @@ export class OffersService {
     this.getTotalPrice();
     console.log(this.cartItemList);
   }
+
+
+
+  compBudget(num:number):number{
+    let tPrice=0;
+    tPrice=this.getTotalPrice();
+    if(tPrice>num){
+      console.log("out of Budget");
+    }
+    return 1;
+  }
+
   getTotalPrice(): number{
     let grandTotal=0;
     this.cartItemList.map((a:any)=>{

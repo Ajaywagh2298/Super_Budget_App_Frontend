@@ -15,7 +15,8 @@ export class OffersComponent implements OnInit {
   ngOnInit(): void {
     this.OffersService.getProducts().subscribe(res=>{
       this.products=res;
-      this.grandTotal=this.OffersService.getTotalPrice()
+      this.grandTotal=this.OffersService.getTotalPrice();
+      return this.grandTotal;
     })
   }
   removeItem(item:any){
