@@ -53,6 +53,7 @@ import { ScanMainComponent } from './scan-main/scan-main.component';
 import { ScanCartComponent } from './scan-cart/scan-cart.component';
 import {ServiceWorkerModule, SwRegistrationOptions } from '@angular/service-worker';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import { CustomerPurchaseHistoryComponent } from './customer-purchase-history/customer-purchase-history.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     SetBudgetComponent,
     AdminLoginComponent,
     ScanMainComponent,
-    ScanCartComponent
+    ScanCartComponent,
+    CustomerPurchaseHistoryComponent
   ],
     imports: [
         BrowserModule,

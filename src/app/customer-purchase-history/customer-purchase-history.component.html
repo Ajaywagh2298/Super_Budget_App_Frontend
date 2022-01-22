@@ -1,0 +1,53 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<div class="container-box">
+<table class="table table-primary">
+  <tr  class="bg-light">
+    <th style="width:10%;">Date</th>
+    <th style="width:20%;">Grand Total</th>
+    <th style="width:30%;">Transaction Type</th>
+    <th style="width:30%;">Transaction ID</th>
+    <th style="width:10%;">See Bill</th>
+  </tr>
+  <tbody id="myTable">
+
+  </tbody>
+</table>
+
+<script>
+
+  var table = document.getElementById('myTable')
+  $.ajax({
+    //url: './table.json',
+    //dataType: 'json',
+    success: function(data) {
+      let items = [
+        {'name':'Michael', 'age':'30', 'birthdate':'11/10/1989'},
+        {'name':'Mila', 'age':'32', 'birthdate':'10/1/1989'},
+        {'name':'Paul', 'age':'29', 'birthdate':'10/14/1990'},
+        {'name':'Dennis', 'age':'25', 'birthdate':'11/29/1993'},
+        {'name':'Tim', 'age':'27', 'birthdate':'3/12/1991'},
+        {'name':'Erik', 'age':'24', 'birthdate':'10/31/1995'},
+      ];
+
+      for (let i = 0; i < items.length; i++){
+        let row = `<tr>
+							<td>${items[i].name}</td>
+							<td>${items[i].age}</td>
+							<td>${items[i].birthdate}</td>
+					  </tr>`;
+        table.innerHTML += row
+
+
+      }
+
+
+    }
+  });
+
+
+
+
+
+</script>
+
+</div>
